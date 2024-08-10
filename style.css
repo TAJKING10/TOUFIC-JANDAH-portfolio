@@ -744,6 +744,7 @@ span{
     max-width: 80%;
 }
 
+
 #image-container {
     position: relative;
     display: flex;
@@ -821,3 +822,117 @@ span{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#media-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack media and caption vertically */
+    align-items: center;
+    margin-top: 40px;
+}
+
+#media-container img, #media-container video {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+#caption {
+    margin-top: 10px;
+    padding-bottom: 20px; /* Add padding to push the caption closer to the bottom */
+    font-size: 1.5vw;
+    color: white; /* Set caption text color to white */
+    text-align: center; /* Center the caption text */
+}
+
+
+
+#media-container img, #media-container video {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+#media-container img:hover, #media-container video:hover {
+    transform: scale(1.1);
+}
+
+.invisible-button {
+    border: none;
+    padding: 10px; /* Add padding to ensure button size */
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 10px; /* Adjust positioning as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black; /* Set background color to black */
+    border-radius: 50%; /* Optional: make the button circular */
+}
+
+.leftyyy {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    left: 0; /* Absolute positioning to the left side of the website */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black; /* Set background color to black */
+    border-radius: 50%; /* Optional: make the button circular */
+}
+
+.invisible-button i, .leftyyy i {
+    font-size: 48px; /* Set a fixed font size */
+    color: #3cff00ea; /* Set icon color */
+}
+
+@media screen and (max-width: 768px) {
+    .section1 h1 {
+        font-size: 6vw;
+    }
+
+    .section1 p {
+        font-size: 3vw;
+    }
+
+    #media-container img, #media-container video {
+        max-width: 80%;
+    }
+
+    .invisible-button i, .leftyyy i {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section1 h1 {
+        font-size: 8vw;
+    }
+
+    .section1 p {
+        font-size: 4vw;
+    }
+
+    #media-container img, #media-container video {
+        max-width: 100%;
+    }
+
+    .invisible-button i, .leftyyy i {
+        font-size: 8vw;
+    }
+}
